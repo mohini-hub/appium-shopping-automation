@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Smoke suite: only tests tagged with the "smoke" group (critical user journeys) -->
+<suite name="Smoke Suite" verbose="1">
+
+    <listeners>
+        <listener class-name="com.automation.listeners.TestListener"/>
+        <listener class-name="com.automation.listeners.AnnotationTransformer"/>
+    </listeners>
+
+    <test name="Shopping App - Smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automation.tests.LoginTest"/>
+            <class name="com.automation.tests.CatalogTest"/>
+            <class name="com.automation.tests.CartTest"/>
+            <class name="com.automation.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>

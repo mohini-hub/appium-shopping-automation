@@ -1,0 +1,10 @@
+
+target/
+allure-results/
+allure-report/
+.idea/
+*.iml
+.vscode/
+apps/*.apk
+appium.log
+.DS_Store

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Wrong password",
+    "username": "bod@example.com",
+    "password": "wrong-password",
+    "expectedError": "do not match any user"
+  },
+  {
+    "name": "Locked out user",
+    "username": "alice@example.com",
+    "password": "10203040",
+    "expectedError": "locked out"
+  },
+  {
+    "name": "Empty username",
+    "username": "",
+    "password": "10203040",
+    "expectedError": "Username is required"
+  },
+  {
+    "name": "Empty password",
+    "username": "bod@example.com",
+    "password": "",
+    "expectedError": "Enter Password"
+  }
+]
