@@ -1,9 +1,7 @@
 name: Android UI Tests
 
+# Manual only: the app APK is not stored in the repository, so the workflow needs the APK_URL variable first.
 on:
-  push:
-    branches: [ main ]
-  pull_request:
   workflow_dispatch:
 
 jobs:
